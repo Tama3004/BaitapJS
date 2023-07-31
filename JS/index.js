@@ -53,10 +53,11 @@ function FminN() {
 }
 // 5
 function endCnumber() {
-  var endC = nArray[0];
-  for (var i = 0; i < nArray.length; i++) {
+  var endC = 0;
+  for (var i = nArray.length-1; i >= 0 ; i--) {
     if (nArray[i] % 2 == 0) {
       endC = nArray[i];
+      break;
     } else {
       endC = -1;
     }
